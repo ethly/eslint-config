@@ -1,0 +1,34 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "plugin:flowtype/recommended",
+    "plugin:jasmine/recommended",
+    "plugin:react/recommended",
+    "plugin:promise/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "jasmine": true
+  },
+  "plugins": [
+    "standard",
+    "flowtype",
+    "jasmine",
+    "react",
+    "promise",
+    "import"
+  ],
+  "rules": {
+    "comma-dangle": ["warn", "always-multiline"],
+    "space-before-function-paren": ["warn", "never"],
+    "flowtype/delimiter-dangle": ["warn", "always-multiline"],
+    "flowtype/no-weak-types": ["warn"]
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
